@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                <% if (config.subtitle && config.subtitle.length > 0) { %>
+                    <%= config.subtitle %>
+                <% } else { %>
+                    豆包君
+                <% } %>
+            </div>
+
+            <div class="description center-align">
+                <% if (config.description && config.description.length > 0) { %>
+                    <%= config.description %>
+                <% } else { %>
+                    In me the tiger sniffs the rose.
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+// 每天切换 banner 图.  Switch banner image every day.
+// $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+$('.bg-cover').css('background-image', 'url(https://pictures-1257961856.cos.ap-shanghai.myqcloud.com/images/bg-cover/' + Math.floor(Math.random() * 62 ) + '.jpg)');
+</script>
